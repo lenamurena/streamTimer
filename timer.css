@@ -81,10 +81,10 @@ div#content.center::after {
   right: -26px;
 
   background: #00e5d1;
-  background: -moz-linear-gradient(left, #00e5d1 0%, #00e5d1 50%, #0294ff 51%, #0294ff 100%);
-  background: -webkit-linear-gradient(left, #00e5d1 0%,#00e5d1 50%,#0294ff 51%,#0294ff 100%);
-  background: linear-gradient(to right, #00e5d1 0%,#00e5d1 50%,#0294ff 51%,#0294ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5d1', endColorstr='#0294ff',GradientType=1 );
+  background: -moz-linear-gradient(left, #00e5d1 0%, #00e5d1 50%, #8d56a9 51%, #8d56a9 100%);
+  background: -webkit-linear-gradient(left, #00e5d1 0%,#00e5d1 50%,#8d56a9 51%,#8d56a9 100%);
+  background: linear-gradient(to right, #00e5d1 0%,#00e5d1 50%,#8d56a9 51%,#8d56a9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5d1', endColorstr='#8d56a9',GradientType=1 );
 
   transform-origin: left top;
   transform: skewX(-29deg);
