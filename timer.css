@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Consolas;
+  src: url(consola.ttf);
+}
+
+body {
+  font-family: consolas, Consolas;
+  font-style: italic;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+div#content {
+  background: #8d56a9;
+  background: -webkit-linear-gradient(bottom right, #8d56a9, #8d56a9);
+  background: -o-linear-gradient(bottom right, #8d56a9, #8d56a9);
+  background: -moz-linear-gradient(bottom right, #8d56a9, #8d56a9);
+  background: linear-gradient(bottom right, #8d56a9, #8d56a9);
+  position: relative;
+  width: 222px;
+  height: 47px;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+div#content.left {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+div#content.left::after {
+  content: '';
+  width: 222px;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  background-color: #8d56a9;
+  transform-origin: right bottom;
+  transform: skewX(-29deg);
+}
+
+div#content.right {
+  text-align: left;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+div#content.right::after {
+  content: '';
+  width: 222px;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #8d56a9;
+  transform-origin: left top;
+  transform: skewX(-29deg);
+}
+
+div#content.right div#sps {
+  position: relative;
+  right: 8px;
+}
+
+div#content.center {
+  text-align: left;
+  margin: auto;
+}
+
+div#content.center::after {
+  content: '';
+  width: 249px;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: -26px;
+
+  background: #00e5d1;
+  background: -moz-linear-gradient(left, #00e5d1 0%, #00e5d1 50%, #0294ff 51%, #0294ff 100%);
+  background: -webkit-linear-gradient(left, #00e5d1 0%,#00e5d1 50%,#0294ff 51%,#0294ff 100%);
+  background: linear-gradient(to right, #00e5d1 0%,#00e5d1 50%,#0294ff 51%,#0294ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5d1', endColorstr='#0294ff',GradientType=1 );
+
+  transform-origin: left top;
+  transform: skewX(-29deg);
+}
+
+div#content.center div#sps {
+  display: inline-block;
+  position: relative;
+  right: 4px;
+}
+
+span {
+  display: inline-block;
+  width: 42px;
+  text-align: left;
+}
+
+span#zz {
+  width: 30px;
+}
+
+span#hh {
+  max-width: 40px;
+  max-width: 500px;
+}
